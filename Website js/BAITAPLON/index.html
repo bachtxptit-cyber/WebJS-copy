@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenEarth - Bảo vệ Hành tinh Xanh</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+ <div class="progress-container">
+  <div class="progress-bar" id="reading-progress"></div>
+</div>
+
+<main class="article-content">
+ 
+  </main>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">
+        <span class="logo-icon">🌿</span> GreenEarth
+      </a>
+      <ul class="nav-links" id="desktopNavLinks">
+        <li><a href="#thuc-trang">Thực trạng</a></li>
+        <li><a href="#nguyen-nhan">Nguyên nhân</a></li>
+        <li><a href="#giai-phap">Giải pháp</a></li>
+        <li><a href="#gallery">Thư viện ảnh</a></li>
+      </ul>
+      <div class="nav-btns">
+        <button class="btn-theme" id="themeBtn" title="Đổi giao diện">🌙</button>
+        <a class="btn-nav-cta" href="#lien-he">Hành động ngay</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="menu-overlay" id="menuOverlay" onclick="closeMobile()"></div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" onclick="closeMobile()" class="mobile-link active">🏠 Trang chủ</a>
+    <a href="#thuc-trang" onclick="closeMobile()" class="mobile-link">📊 Thực trạng</a>
+    <a href="#nguyen-nhan" onclick="closeMobile()" class="mobile-link">🔍 Nguyên nhân</a>
+    <a href="#giai-phap" onclick="closeMobile()" class="mobile-link">💡 Giải pháp</a>
+    <a href="#gallery" onclick="closeMobile()" class="mobile-link">📸 Thư viện ảnh</a>
+    <a href="#lien-he" onclick="closeMobile()" class="mobile-link">📬 Liên hệ</a>
+    <a href="#lien-he" onclick="closeMobile()" class="btn-mobile-cta">🌱 Chung tay bảo vệ môi trường</a>
+  </div>
+
+  <section class="hero-section" id="trang-chu">
+    <canvas id="particles"></canvas>
+    <div class="orb-wrap">
+      <div class="orb-mover" id="orbMover">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+    </div>
+    <div class="section-inner hero-grid">
+      <div style="z-index: 2;">
+        <span class="hero-tag">🌍 Ngày Trái Đất 2026</span>
+        <h1 class="hero-title reveal reveal-delay-1">Chung tay bảo vệ<br><span>Hành tinh Xanh</span></h1>
+        <p class="hero-desc reveal reveal-delay-2">Trái Đất đang lên tiếng kêu cứu trước những biến đổi khắc nghiệt từ con người. Một hành động nhỏ của bạn hôm nay quyết định tương lai của thế hệ mai sau.</p>
+        <div class="hero-btns reveal reveal-delay-3">
+          <a class="btn-primary" href="#giai-phap">Tìm hiểu giải pháp →</a>
+          <a class="btn-secondary" href="#lien-he">Tham gia chiến dịch</a>
+        </div>
+      </div>
+      <div class="hero-visual-earth reveal reveal-delay-2">
+        <img class="hero-earth-img" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png" alt="Trái Đất Không Phông">
+      </div>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="news-slider-section">
+
+    <div class="news-slider">
+
+        <div class="news-track">
+
+            
+            <div class="news-item">
+
+                <img src="https://i.pinimg.com/1200x/5f/f0/24/5ff024aad3f5f2339391c7674422e111.jpg" alt="">
+
+                <div class="news-overlay">
+
+                    <span class="news-category">
+                        🌍 MÔI TRƯỜNG
+                    </span>
+
+                    <h2>
+                        Biến đổi khí hậu đang ảnh hưởng nghiêm trọng toàn cầu
+                    </h2>
+
+                    <p>
+                        Nhiệt độ Trái Đất liên tục tăng khiến thảm hoạ tự nhiên xuất hiện nhiều hơn.
+                    </p>
+
+                    <a href="#" class="news-btn">
+                        Khám phá →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- NEWS 2 -->
+            <div class="news-item">
+
+                <img src="https://environment.co/wp-content/uploads/sites/4/2026/03/hector-john-periquin-_szPDggb37o-unsplash-1.jpg.webp" alt="">
+
+                <div class="news-overlay">
+
+                    <span class="news-category">
+                        ❄ KHÍ HẬU
+                    </span>
+
+                    <h2>
+                        Bắc Cực ghi nhận lượng băng tan nhanh nhất lịch sử
+                    </h2>
+
+                    <p>
+                        Các chuyên gia cảnh báo mực nước biển có thể tăng mạnh trong vài thập kỷ tới.
+                    </p>
+
+                    <a href="#" class="news-btn">
+                        Khám phá →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- NEWS 3 -->
+            <div class="news-item">
+
+                <img src="https://i.pinimg.com/736x/2b/6d/2b/2b6d2baf3b25f584152f0122186972e6.jpg" alt="">
+
+                <div class="news-overlay">
+
+                    <span class="news-category">
+                        🗑 Ô NHIỄM
+                    </span>
+
+                    <h2>
+                        Rác thải nhựa đang dần dần bao phủ kín toàn bộ đại dương
+                    </h2>
+
+                    <p>
+                        Hàng triệu sinh vật biển bị ảnh hưởng bởi lượng vi nhựa ngày càng tăng cao.
+                    </p>
+
+                    <a href="#" class="news-btn">
+                        Khám phá →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- NEWS 4 -->
+            <div class="news-item">
+
+                <img src="https://i.pinimg.com/1200x/40/1b/a4/401ba43d05921428dfd85b72efcf69a5.jpg" alt="">
+
+                <div class="news-overlay">
+
+                    <span class="news-category">
+                        ⚡ NĂNG LƯỢNG XANH
+                    </span>
+
+                    <h2>
+                        Xu hướng sử dụng năng lượng tái tạo đang  tăng cực kỳ mạnh
+                    </h2>
+
+                    <p>
+                        Điện gió và điện mặt trời đang trở thành nguồn năng lượng chủ đạo trong tương lai.
+                    </p>
+
+                    <a href="#" class="news-btn">
+                        Khám phá →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  
+  <section class="stats-section" id="thuc-trang">
+    <div class="section-inner">
+      <span class="section-tag reveal">📊 Con số báo động</span>
+      <h2 class="section-title reveal reveal-delay-1">Thực trạng môi trường toàn cầu</h2>
+      <p class="section-desc reveal reveal-delay-2">Báo cáo cập nhật mới nhất về mức độ tàn phá tự nhiên khủng khiếp đang diễn ra hàng ngày.</p>
+      
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <span class="card-icon">🌋</span>
+          <div class="card-number" data-count="420" data-suffix=" ppm">0 ppm</div>
+          <div class="card-title">Nồng độ CO₂ kỷ lục</div>
+          <div class="card-text">Mật độ khí carbon trong khí quyển đạt mức cao nhất trong 3 triệu năm qua, đẩy nhanh hiện tượng Trái Đất nóng lên.</div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" data-width="85"></div>
+          </div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <span class="card-icon">💧</span>
+          <div class="card-number" data-count="2.2" data-suffix="B">0B</div>
+          <div class="card-title">Ô nhiễm nguồn nước</div>
+          <div class="card-text">2.2 tỷ người đang thiếu nước sạch để uống. 80% nước thải công nghiệp đổ thẳng ra sông biển không qua xử lý.</div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" data-width="78"></div>
+          </div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <span class="card-icon">♻️</span>
+          <div class="card-number" data-count="380" data-suffix="M">0M</div>
+          <div class="card-title">Rác thải nhựa</div>
+          <div class="card-text">380 triệu tấn nhựa sản xuất mỗi năm, nhưng vỏn vẹn chỉ 9% được tái chế. Số còn lại tồn tại hàng trăm năm.</div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" data-width="91"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="causes-section" id="nguyen-nhan">
+    <div class="section-inner">
+      <span class="section-tag reveal">🔍 Nguyên nhân chính</span>
+      <h2 class="section-title reveal reveal-delay-1">Tại sao môi trường đang bị tàn phá?</h2>
+      <p class="section-desc reveal reveal-delay-2">Nhiếu chuỗi hoạt động của con người đang để lại vết sẹo không thể đảo ngược.</p>
+
+      <div class="causes-grid">
+        <div class="cause-card reveal">
+          <span class="cause-emoji">🏭</span>
+          <div class="cause-title">Khói thải công nghiệp</div>
+          <div class="cause-text">Các nhà máy xả khí CO₂, SO₂ và các hợp chất độc hại gián tiếp gây ô nhiễm không khí nặng và mưa axit.</div>
+        </div>
+        <div class="cause-card reveal reveal-delay-1">
+          <span class="cause-emoji">🚗</span>
+          <div class="cause-title">Phương tiện giao thông</div>
+          <div class="cause-text">Hàng tỷ phương tiện xả bụi mịn PM2.5 và CO₂ mỗi ngày vào tầng khí quyển, tác nhân lớn của hiệu ứng nhà kính.</div>
+        </div>
+        <div class="cause-card reveal reveal-delay-2">
+          <span class="cause-emoji">🌳</span>
+          <div class="cause-title">Phá rừng diện rộng</div>
+          <div class="cause-text">Mỗi phút có tới 36 sân bóng đá diện tích rừng bị triệt hạ. Rừng mất đi kéo theo lá phổi hành tinh ngừng thở.</div>
+        </div>
+        <div class="cause-card reveal reveal-delay-3">
+          <span class="cause-emoji">🛢️</span>
+          <div class="cause-title">Tràn dầu & hóa chất</div>
+          <div class="cause-text">Các tai nạn tràn dầu trên biển độc hóa chuỗi thức ăn sinh vật biển và hủy hoại hệ sinh thái sông ngòi hàng thế kỷ.</div>
+        </div>
+        <div class="cause-card reveal">
+          <span class="cause-emoji">🗑️</span>
+          <div class="cause-title">Rác thải sinh hoạt</div>
+          <div class="cause-text">Hàng trăm triệu tấn rác từ hộ gia đình, túi nilon, chai lọ khó phân hủy đang lấp đầy đại dương và bãi chôn lấp.</div>
+        </div>
+        <div class="cause-card reveal reveal-delay-1">
+          <span class="cause-emoji">🌾</span>
+          <div class="cause-title">Nông nghiệp hóa học</div>
+          <div class="cause-text">Sử dụng lạm dụng thuốc trừ sâu, phân bón hóa học làm biến tính cấu trúc đất mặt và ngấm sâu hủy hoại mạch nước ngầm.</div>
+        </div>
+        <div class="cause-card reveal reveal-delay-2">
+          <span class="cause-emoji">⚡</span>
+          <div class="cause-title">Năng lượng than đá</div>
+          <div class="cause-text">Đốt lò than đá phát thải lượng CO₂ cực lớn cùng hơi thủy ngân tự do vào khí quyển, tác động trực tiếp tới biến đổi khí hậu toàn cầu.</div>
+        </div>
+        <div class="cause-card reveal reveal-delay-3">
+          <span class="cause-emoji">📦</span>
+          <div class="cause-title">Tiêu dùng quá mức</div>
+          <div class="cause-text">Thói quen mua sắm nhanh, sử dụng ngắn hạn tạo gánh nặng rác xả thải khổng lồ vượt xa công suất tái chế hiện hữu.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="solutions-section" id="giai-phap">
+    <div class="section-inner">
+      <span class="section-tag reveal">💡 Hành động hành tinh</span>
+      <h2 class="section-title reveal reveal-delay-1">Chúng ta hoàn toàn có thể thay đổi</h2>
+      <p class="section-desc reveal reveal-delay-2">Mọi nỗ lực, dù là nhỏ nhất, đều lan tỏa những giá trị phục hồi tích cực cho Trái Đất.</p>
+
+      <div class="solutions-timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🌳</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Trồng cây – Hồi sinh màu xanh</div>
+            <div class="timeline-text">Mỗi cây xanh hấp thụ khoảng 22kg CO₂/năm. Trồng một cây là bạn vừa tặng cho Trái Đất một chiếc máy lọc khí tự nhiên hoàn chỉnh. Hãy tích cực hưởng ứng chương trình trồng rừng địa phương.</div>
+            <div class="timeline-tag">🌿 Tác động lâu dài</div>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot">🚫</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Nói không với nhựa dùng một lần</div>
+            <div class="timeline-text">Thay thế bằng túi vải cá nhân, bình nước giữ nhiệt và từ chối ống hút nhựa thông thường. Khi 1 triệu người cùng làm việc này, hàng tỷ hạt vi nhựa sẽ không có cơ hội tràn ra đại dương.</div>
+            <div class="timeline-tag">♻️ Rất dễ thực hiện</div>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot">💡</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Tiết kiệm nguồn năng lượng điện - nước</div>
+            <div class="timeline-text">Rút nguồn thiết bị không dùng, chuyển đổi hoàn toàn sang bóng đèn công nghệ LED tiết kiệm điện, khóa chặt vòi nước. Năng lượng tiết kiệm đồng nghĩa giảm đốt than đá tại nhà máy nhiệt điện.</div>
+            <div class="timeline-tag">⚡ Tiết kiệm chi phí</div>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-dot">🔄</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Phân loại và tái chế rác đúng chuẩn</div>
+            <div class="timeline-text">Tách bạch rõ ràng nhóm rác hữu cơ, vô cơ và tái chế ngay từ nguồn xả thải gia đình. Việc này giúp giảm diện tích chôn lấp, tối ưu quy trình xử lý vật liệu tái chế.</div>
+            <div class="timeline-tag">🗑️ Thói quen văn minh</div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🚲</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Ưu tiên di chuyển xanh</div>
+            <div class="timeline-text">Lựa chọn giải pháp đi bộ, đạp xe thể thao hoặc đi các tuyến xe công cộng thay cho phương tiện cá nhân. Cứ mỗi km cắt giảm xe cơ giới, bạn bớt xả 150g CO₂ vào không khí.</div>
+            <div class="timeline-tag">🌍 Vì khí hậu chung</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="section-inner">
+      <div class="gallery-intro">
+        <div>
+          <span class="section-tag reveal">📸 Góc nhìn trực quan</span>
+          <h2 class="section-title reveal reveal-delay-1">Sự tương phản sắc nét của tự nhiên</h2>
+        </div>
+        <p class="reveal" style="max-width:320px; color:var(--text-secondary); font-size:.95rem;">Hình ảnh đối lập lột tả tốc độ biến đổi đáng sợ của thiên nhiên dưới sức ép đô thị hóa và rác thải.</p>
+      </div>
+    
+ <div class="gallery-grid reveal">
+        <div class="gallery-item">
+          <div class="gallery-css-img img-before-1"></div>
+          <div class="gallery-overlay">
+            <div class="gallery-label">🌿 Rừng Amazon nguyên sinh</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-css-img img-before-2"></div>
+          <div class="gallery-overlay">
+            <div class="gallery-label">🌊 Đại dương trong lành xanh ngát</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-css-img img-before-3"></div>
+          <div class="gallery-overlay">
+            <div class="gallery-label">🌾 Cánh đồng xanh bạt ngàn</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-css-img img-after-1"></div>
+          <div class="gallery-overlay">
+            <div class="gallery-label">🏭 Đô thị ngập trong khói bụi độc hại</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-css-img img-after-2"></div>
+          <div class="gallery-overlay">
+            <div class="gallery-label">🗑️ Rác thải bủa vây sinh vật biển</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- SLIDER ẢNH -->
+ <div class="xenova-frame">
+
+        <div class="veltrix-lane"> 
+
+            <img src="https://i.pinimg.com/1200x/1f/00/a6/1f00a696069bceb7e75bc5903785dcc1.jpg" alt="">
+            <img src="https://i.pinimg.com/1200x/da/fb/fd/dafbfd396e86b425f8c1bfd6392219eb.jpg" alt="">
+            <img src="https://i.pinimg.com/736x/0f/5f/a1/0f5fa163d9f72eda8e7077570f2148c8.jpg" alt="">
+            <img src="https://i.pinimg.com/1200x/60/0a/f8/600af8e8f2b4ea4577bda8969bf46c8d.jpg" alt="">
+
+        </div>
+
+    </div> 
+
+  <section class="cta-section" id="lien-he">
+    <div class="cta-inner">
+      <div>
+        <span class="section-tag reveal" style="background:rgba(255,255,255,.15); color:#fff; border:none;">🌱 Cùng hành động</span>
+        <h2 class="cta-title reveal reveal-delay-1">Một thay đổi nhỏ hôm nay,<br>Cứu cả tương lai mai sau</h2>
+        <p class="cta-desc reveal reveal-delay-2">Tham gia vào mạng lưới tình nguyện viên GreenEarth toàn quốc để chung sức triển khai dự án thực tế bảo vệ Trái Đất vững bền.</p>
+        
+        <div style="display:flex; gap:2rem; margin-top:2.5rem;" class="reveal reveal-delay-3">
+          <div>
+            <div style="font-family:var(--font-display); font-size:2rem; font-weight:900;">50K+</div>
+            <div style="opacity:.75; font-size:.85rem;">Thành viên tham gia</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display); font-size:2rem; font-weight:900;">120+</div>
+            <div style="opacity:.75; font-size:.85rem;">Chiến dịch toàn quốc</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display); font-size:2rem; font-weight:900;">63</div>
+            <div style="opacity:.75; font-size:.85rem;">Tỉnh thành hưởng ứng</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="signup-form reveal reveal-delay-2">
+        <div class="form-title">🌿 Đăng ký tham gia chiến dịch</div>
+        <div class="form-group">
+          <input type="text" placeholder="Họ và tên của bạn" id="formName">
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Địa chỉ email liên hệ" id="formEmail">
+        </div>
+        <div class="form-group">
+          <select id="formCampaign">
+            <option value="" disabled selected>Chọn chiến dịch muốn tham gia...</option>
+            <option>🌳 Trồng 1 triệu cây xanh năm nay</option>
+            <option>🗑️ Chiến dịch thu gom rác bờ biển</option>
+            <option>♻️ Phân loại rác hữu cơ tại nguồn</option>
+            <option>🚲 Tuần lễ di chuyển xanh công cộng</option>
+            <option>💧 Bảo vệ và khơi thông nguồn nước</option>
+          </select>
+        </div>
+        <button class="btn-submit" onclick="submitForm()">Đăng ký tham gia ngay →</button>
+        <p style="font-size:.78rem; opacity:.65; margin-top:.75rem; text-align:center; color:#666;">Hoàn toàn tự nguyện và miễn phí. Bảo mật thông tin.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner section-inner" style="padding-bottom: 0;">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="color: #62c33d;">
+            <span class="logo-icon">🌿</span> GreenEarth
+          </div>
+          <p class="footer-desc">Tổ chức phi lợi nhuận hướng tới một hành tinh xanh hơn, sạch hơn cho thế hệ tương lai. Mỗi hành động của bạn đều có ý nghĩa.</p>
+          <div class="social-icons">
+            <a class="social-icon" href="#" title="Facebook">𝕗</a>
+            <a class="social-icon" href="#" title="Instagram">📸</a>
+            <a class="social-icon" href="#" title="YouTube">▶</a>
+            <a class="social-icon" href="#" title="TikTok">♪</a>
+            <a class="social-icon" href="#" title="Twitter/X">𝕏</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Khám phá</div>
+          <ul class="footer-links">
+            <li><a href="#thuc-trang">Thực trạng ô nhiễm</a></li>
+            <li><a href="#nguyen-nhan">Nguyên nhân</a></li>
+            <li><a href="#giai-phap">Giải pháp xanh</a></li>
+            <li><a href="#gallery">Hình ảnh môi trường</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Tham gia</div>
+          <ul class="footer-links">
+            <li><a href="#lien-he">Đăng ký chiến dịch</a></li>
+            <li><a href="#">Tình nguyện viên</a></li>
+            <li><a href="#">Quyên góp</a></li>
+            <li><a href="#">Doanh nghiệp xanh</a></li>
+          </ul>
+        </div>
+      
+
+        <div>
+          <div class="footer-col-title">Liên hệ</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@greenearth.vn">📧 info@greenearth.vn</a></li>
+            <li><a href="#">📞 1800 1234</a></li>
+            <li><a href="#">📍 Hà Nội, Việt Nam</a></li>
+            <li><a href="#">📰 Bản tin hàng tuần</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 GreenEarth Vietnam. Bảo lưu mọi quyền. Made with 💚 for the planet.</div>
+        <div class="footer-legal">
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản sử dụng</a>
+          <a href="#">Cookie</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">↑</button>
+  <script src="assets/js/script.js"></script>
+  <!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- NÚT MESSENGER + INSTAGRAM -->
+<div class="social-fixed">
+
+    <a href="https://www.messenger.com/?locale=vi_VN" target = "blank" class="social-btn messenger">
+        <i class="fa-brands fa-facebook-messenger"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target = "blank" class="social-btn instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+</body>
+</html>
+
+
+
